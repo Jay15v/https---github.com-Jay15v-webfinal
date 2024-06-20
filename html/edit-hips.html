@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>edit_waist</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logoo">myfitness</div>
+    </section>
+
+    <div class="wrapper">
+        <nav class="top_nav">
+                <ul>
+                    <li><a href="">MYHOME</a></li>
+                    <li><a href="food.html">FOOD</a></li>
+                    <li><a href="#">Exercise</a></li>
+                </ul>
+        </nav>
+        <nav class="bottom_nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="check-in.html">CHECK-IN</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="edit-container">
+        <h2>Edit Previous Measurement Entries</h2>
+        <p>Measurements to edit:</p>
+        <select id="measurementSelect" class="measurement">
+            <option value="hips">Hips</option>
+            <option value="weight">Weight</option>
+            <option value="neck">Neck</option>
+            <option value="waist">Waist</option>
+           
+        </select>
+        <button class="change-weight">CHANGE</button>
+        <div class="table-box">
+            <div class="table-row table-head">
+                <div class="table-cell">
+                    <p> Measurements</p> 
+                </div>
+                <div class="table-cell">
+                    <p>Date</p> 
+                </div>
+                <div class="table-cell">
+                    <p>Amount</p> 
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>No measurements found.</p> 
+                </div>
+                <div class="table-cell">
+                    
+                </div>
+                <div class="table-cell">
+                    
+                </div>
+            </div>
+        </div>
+        <p>Add New Entry</p>
+        <div class="measure">
+        <input type="date" id="diaryDate">
+      
+        <input type="number" id="measure"  min="0">
+       </div>
+            <button class="new-entry">ADD NEW ENTRY</button>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+</html>

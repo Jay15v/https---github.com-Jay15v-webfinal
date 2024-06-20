@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Diet Tracker</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">myfitness</a>
+            <ul class="nav_item">
+                <li class="nav_item">
+                    <a href="#home">Home</a>
+                    <a href="#service">Service</a>
+                    <a href="#Philosophy">Philosophy</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   <!-- Home Section -->
+   <section class="home" id="home">
+    <div class="overlay">
+      <h1 id="homeh">Keep Your Body Healthy And Fit</h1> 
+      <p id="homep">Your journey to better health starts here! Explore personalized plans and expert advice to help you reach your wellness goals. Ready to feel your best? Sign up or log in now and let's begin your transformation!</p>
+       <a href="#" class="main-btn" id="startNowButton">START NOW</a>
+      </div>
+      <!--
+        <div class="home-content">
+          <div>
+              <h1>Eat smarter.<br>Live fbetter.</h1>
+              <p>Track your diet, exercise, and health data.</p>
+          </div>
+          <div class="image-home">
+              <img src="https://www.cleaneatingkitchen.com/wp-content/uploads/2019/06/green-juice-on-table-with-vegetables.jpg" alt="Fitness Image">
+          </div>
+      </div>
+      */
+      -->
+        <div class="form_container">
+            <i class="fa-solid fa-xmark form_closer"></i>
+            <!-- Login Form -->
+          <div class="login_form">
+    <form action="#" id="loginForm">
+        <h2>Login</h2>
+        <div class="input_box">
+            <input type="email" placeholder="Email" id="loginEmail">
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="Password" id="loginPassword">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="form-link">
+            <a href="#" class="forgot_pass">Forgot Password?</a>
+        </div>
+        <button type="submit" class="login-button">Login</button>
+        <div id="loginError" style="color: red; display: none;">Wrong email or password!</div>
+        <div class="signup">
+            <span>Not a member yet?</span> <a href="#" class="Signup">Sign up!</a>
+        </div>
+    </form>
+</div>
+
+            <!-- Signup Form -->
+            <div class="signup_form">
+                <form action="#" id="signupForm">
+                    <h2>Sign Up</h2>
+                    <div class="input_box">
+                        <input type="email" placeholder="Email" id="signupEmail">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create password" id="signupPassword">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm password" id="confirmPassword">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <button type="submit" class="signup-button">Sign Up</button>
+                    <div id="signupError" style="color: red; display: none;"></div>
+                    <div class="signup">
+                        <span>Already have an account?</span> <a href="#" class="Login">Login</a>
+                    </div>
+                </form>
+            </div>
+            
+    </section>
+
+    <section class ="Cards" id="service">
+        <h2 class="title">Services</h2>
+                <div class="content">
+                    <div class="card">
+                        <div class="icons">
+                            <img src="./images/IMG-20240429-WA0010.jpg"width="90" height="90" alt="diet">
+                        </div>
+                        <div class="info">
+                            <h3>Easy Tracking</h3>
+                                 <p>Massive food catalog, fastest barcode scanner, quickest food lookup making food tracking a breeze</p>
+                                  </div>
+                        </div>
+                        <div class="card">
+                            <div class="icons">
+                                <img src="./images/IMG-20240429-WA0011.jpg"width="90" height="90" alt="man">
+                            </div>
+                            <div class="info">
+                                <h3>Powerful Impact of Strength Training</h3>
+                                     <p>Strength training enhances muscle mass, bone density, and overall physical performance</p>
+                                      </div>
+                            </div>
+                            <div class="card">
+                                <div class="icons">
+                                    <img src="./images/IMG-20240429-WA0012.jpg"width="90" height="90" alt="water">
+                                </div>
+                                <div class="info">
+                                <h3>Hydration Reminder</h3>
+                                   <p>Keep your water intake in check with our bottle-mounted alert system</p>
+                                          </div>
+                                </div>
+                                <div class="card">
+                                    <div class="icons">
+                                        <img src="./images/IMG-20240429-WA0014.jpg"width="90" height="90" alt="salad">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Log meals, exercise and health metrics</h3>
+                                             <p>You can create custom foods, recipes, exercises and metrics</p>
+                                              </div>
+                                </div>
+                                <div class="card">
+                                    <div class="icons">
+                                        <img src="./images/IMG-20240429-WA0009.jpg"width="90" height="90" alt="alarm">
+                                    </div>
+                                    <div class="info">
+                                    <h3>Fasting timer</h3>
+                                       <p>Track your intermittent fasts and see their effect over time</p>
+                                              </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="icons">
+                                            <img src="./images/IMG-20240429-WA0013.jpg"width="90" height="90" alt="analytics">
+                                        </div>
+                                        <div class="info">
+                                            <h4>Get valuable health reports and charts</h4>
+                                            <p >Learn how nutrients and metrics correlate over time</p>
+    
+                                                  </div>
+                                    </div>
+                </div>
+     </section>
+    
+<section class="Philosophy" id="Philosophy">
+        <h2 class="title">Philosophy</h2>
+        <div class="philo">
+            <div class="item-1">
+                <img src="./images/WhatsApp Image 2024-04-28 at 21.42.50_4477fbe3.jpg" alt=" 1">
+            </div>
+            <div class=" item-2">
+                <img src="./images/WhatsApp Image 2024-04-28 at 21.42.52_3712d30e.jpg" alt=" 2">
+            </div>
+            <div class="item-3">
+                <img src="./images/WhatsApp Image 2024-04-28 at 21.42.52_7e978453.jpg" alt=" 3">
+            </div>
+            <div class="ph-text">
+               <h3><b>Embarking on a journey towards a healthier lifestyle <br>is one of the most empowering choices you can make. </b></h3>
+               
+                   <p><br> "Our approach is holistic—focusing not just on physical fitness, but also on nourishing your body, mind, and spirit. Whether you're looking to revolutionize your diet, enhance your fitness routine, or cultivate mental resilience, 
+                    we're here to guide and inspire you every step of the way.<br> Join us to unlock your full potential and transform your life,
+                     because when you feel good, there's nothing you can't achieve.<br> Let's make every day a step towards lasting wellness."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer">
+            <h4> myfitness</h4>
+           
+            <p >Hey! let's stalk each other on social media!</p>
+            <div class="icon">
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <p class="footer-text">Copyrights © 2011-2024</p>
+                <p class="footer-text">All rights reserved </p>
+            </div>
+        </div>
+    </footer>
+
+  
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

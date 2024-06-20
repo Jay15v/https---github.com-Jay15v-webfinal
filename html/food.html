@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header Section -->
+     <section class="header">
+        <div class="logoo">myfitness</div>
+    </section>
+
+    <!-- Navigation Section -->
+    <div class="wrapper">
+        <nav class="top_nav">
+            <ul>
+                <li><a href="home.html">MyHome</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="excersice.html">Exercise</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>
+            </ul>
+        </nav>
+        <nav class="bottom_nav">
+            <ul>
+                <li><a href="food.html">Food diary</a></li>
+                <li><a href="database.html">Database</a></li>
+                <li><a href="Myfood.html">Myfood</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="food-diary-header">
+        <h1>Your Food Diary For:</h1>
+        <input type="date" id="diaryDate" onchange="updateDate()">
+    </div>
+    <div class="food-diary-container">
+        <div class="meal" id="breakfast">
+            <h2>Breakfast</h2>
+            <div class="actions">
+                <button onclick="window.location.href='breakfast.html'">Add Food</button>
+               
+            </div>
+            <div class="nutrition-info">
+                <span>Calories: 0kcal</span>
+                <span>Carbs: 0g</span>
+                <span>Fat: 0g</span>
+                <span>Protein: 0g</span>
+                <span>Sodium: 0mg</span>
+                <span>Sugar: 0g</span>
+            </div>
+        </div>
+        <div class="meal" id="lunch">
+            <h2>Lunch</h2>
+            <div class="actions">
+ <button onclick="window.location.href='breakfast.html'">Add Food</button>
+            </div>
+            <div class="nutrition-info">
+                <span>Calories: 0kcal</span>
+                <span>Carbs: 0g</span>
+                <span>Fat: 0g</span>
+                <span>Protein: 0g</span>
+                <span>Sodium: 0mg</span>
+                <span>Sugar: 0g</span>
+            </div>
+        </div>
+        <div class="meal" id="dinner">
+            <h2>Dinner</h2>
+            <div class="actions">
+                <button onclick="window.location.href='breakfast.html'">Add Food</button>
+            </div>
+            <div class="nutrition-info">
+                <span>Calories: 0kcal</span>
+                <span>Carbs: 0g</span>
+                <span>Fat: 0g</span>
+                <span>Protein: 0g</span>
+                <span>Sodium: 0mg</span>
+                <span>Sugar: 0g</span>
+            </div>
+        </div>
+        <div class="meal" id="snacks">
+            <h2>Snacks</h2>
+            <div class="actions">
+                <button onclick="window.location.href='breakfast.html'">Add Food</button>
+            </div>
+            <div class="nutrition-info">
+                <span>Calories: 0kcal</span>
+                <span>Carbs: 0g</span>
+                <span>Fat: 0g</span>
+                <span>Protein: 0g</span>
+                <span>Sodium: 0mg</span>
+                <span>Sugar: 0g</span>
+            </div>
+        </div>
+        <div class="nutrition-summary">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Calories</th>
+                        <th>Carbs</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Sodium</th>
+                        <th>Sugar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Totals</td>
+                        <td>0</td>
+                        <td>0g</td>
+                        <td>0g</td>
+                        <td>0g</td>
+                        <td>0mg</td>
+                        <td>0g</td>
+                    </tr>
+                    <tr>
+                        <td>Your Daily Goal</td>
+                        <td>2230 kcal</td>
+                        <td>279g</td>
+                        <td>74g</td>
+                        <td>112g</td>
+                        <td>2300mg</td>
+                        <td>84g</td>
+                    </tr>
+                    <tr>
+                        <td>Remaining</td>
+                        <td>2230 kcal</td>
+                        <td>279g</td>
+                        <td>74g</td>
+                        <td>112g</td>
+                        <td>2300mg</td>
+                        <td>84g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="complete-entry">Complete This Entry</button>
+        </div>
+    </div>
+    <div class="water">
+        <p>water reminder</p>
+    <div class="container">
+     
+        <div class="side-info">
+            <img class="water-glass" src="https://static.vecteezy.com/system/resources/previews/006/599/997/non_2x/flat-design-glass-of-water-isolated-on-white-background-free-vector.jpg">
+            <span class="current-cups">0/10</span>
+        </div>
+        <div>
+            <div class="percentage-container">
+                <span class="current-percentage">0%</span>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="side-info">
+            <img class="water-bottle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdPGRg85b1F5y8XMroqb4fy_YMYOVwhgo8XMq_kSvYNkro6J3K0jGZe3GJZOzjr9VP1JE&usqp=CAU">
+            <span class="current-liters">0l/2.5l</span>
+
+        </div>
+        <div class="add_remove">
+            <button class="remove" >-</button>
+            <button class="add">+</button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

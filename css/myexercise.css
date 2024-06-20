@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header .logoo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #34ae85;
+    background-color: whitesmoke;
+    padding: 10px 100px;
+
+    
+}
+.wrapper .bottom_nav,
+.wrapper .top_nav {
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+.wrapper .bottom_nav {
+    background-color: #1c743f;
+    height: 45px;
+}
+.wrapper .bottom_nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.wrapper .bottom_nav  a {
+    color: #fff9f9;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.wrapper .top_nav {
+    height: 45px;
+    background: #13a63f;
+}
+.wrapper .top_nav  ul {
+    display: flex;
+    list-style-type: none;
+}
+.wrapper .top_nav   a {
+    display: block;
+    padding: 8px 10px;
+    color: #ffffff;
+    margin: 0 12px;
+    text-decoration: none;
+
+}
+.wrapper .bottom_nav  a:hover{
+    color: rgb(45, 145, 61);
+    font-weight: bold;
+}
+
+
+
+.exercises {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.button {
+    color:white;
+    background-color: #45a049;
+    margin-left: 90px; 
+    width:220px;
+    height: 42px;
+    font-size: 18px;
+    text-align: center;
+    border:none;
+    border-radius:4px;
+    box-shadow: black;
+
+}
+.button:hover{
+background-color: #3b7e3e;
+}
+h4{
+margin-left: 30px;
+margin-bottom: 10px;
+}
+.search{
+display: flex;
+margin: 5px 0px 5px 32px ;
+border:none;
+width: 300px;
+height: 20px;  
+}
+.search input {
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    font-size: 17px;
+}
+.text{
+width: 300px;
+margin-left: 30px;
+font-size:17px;
+
+
+}
+
+.add-exercise {
+    background-color: rgba(240, 240, 240, 0.986);
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    font-style: bold ;
+
+}
+
+.add-exercise label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-exercise input,.add-exercise select {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px inset #faf8f8;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(235, 231, 231, 0.1);
+
+}
+
+.add-exercise button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    position: fixed;
+    bottom:275px;
+    right: 87%;
+}
+
+.add-exercise button:hover {
+    background-color: #3e8e41;
+}
+h3{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#p {
+     width:444px; 
+     font-size:15px;
+     position: fixed; 
+     top: 150px;
+     right: 596px;
+}
+
+/*h4{
+     position: fixed;
+     top: 120px;
+     right: 868px;
+}*/

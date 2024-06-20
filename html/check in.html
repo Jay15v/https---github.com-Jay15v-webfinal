@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Check-In</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logoo">myfitness</div>
+    </section>
+
+    <div class="wrapper">
+        <nav class="top_nav">
+                <ul>
+                    <li><a href="home.html">MyHome</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="excersice.html">Exercise</a></li>
+              <li><a href="reports.html">Reports</a></li>
+              <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>
+                </ul>
+        </nav>
+        <nav class="bottom_nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="check-in.html">CHECK-IN</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="weight-container">
+      <h1>Check-In</h1>
+      <p>Enter Today's weight:</p>
+      <div class="weight-input">
+        <input type="number" id="weightInput" min="0">
+        <span class="unit">kg</span>
+    </div>
+    <p>Last recorded weight: 70 kg on 4/29/2024</p>
+    <div class="table-box">
+        <div class="table-row table-head">
+            <div class="table-cell">
+                <p>Other Measurements</p> 
+            </div>
+            <div class="table-cell">
+                <p>Last Entry</p> 
+            </div>
+            <div class="table-cell">
+                <p>Today's Entry</p> 
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>Neck</p> 
+            </div>
+            <div class="table-cell">
+                <p>None</p> 
+            </div>
+            <div class="table-cell">
+                <input type="number"  min="0"> 
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>Waist</p> 
+            </div>
+            <div class="table-cell">
+                <p>None</p> 
+            </div>
+            <div class="table-cell">
+                <input type="number" min="0"> 
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>Hips</p> 
+            </div>
+            <div class="table-cell">
+                <p>None</p> 
+            </div>
+            <div class="table-cell">
+                <input type="number" min="0" > 
+            </div>
+        </div>
+    </div>
+    <button class="save-button">Save</button>
+</div>
+
+    <button onclick="window.location.href='edit-measurement.html'"class="editButton">Edit Previous Measurement Entries</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

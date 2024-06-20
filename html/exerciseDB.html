@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="exercise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Database</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logoo">myfitness</div>
+    
+    </section>
+    <div class="wrapper">
+        <nav class="top_nav">
+                <ul>
+                    <li><a href="home.html">MyHome</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="excersice.html">Exercise</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>
+
+                </ul>
+        </nav>
+        <nav class="bottom_nav">
+            <ul>
+                <li><a href="excersice.html">Exercise</a></li>
+                <li><a href="exerciseDB.html">Database</a></li>
+                <li><a href="myexercises.html">MY Exercises</a></li>
+            </ul>
+        </nav>
+    </div>
+<section class="Database">
+    <h1>Calories Burned From Exercise</h1>
+    <div class="search">
+        <input autocomplete="on" type="text" placeholder="   Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <br>
+    <h3>....or choose an exercise:</h3>
+    <select class="combo" id="exerciseSelected">
+        <option value="Select">Select....</option>
+        <option value="ex1">Aerobics</option>
+        <option value="ex2">Aquathlon</option>
+        <option value="ex3">Barre</option>
+        <option value="ex4">Back Butterfly</option>
+        <option value="ex5">Basketball</option>
+        <option value="ex6">Chair yoga</option>
+        <option value="ex7">Chin-Ups</option>
+        <option value="ex8">Crossfit</option>
+        <option value="ex9">Dancing</option>
+        <option value="ex10">Football</option>
+        <option value="ex11">Gym Workout</option>
+        <option value="ex12">Legs Press</option>
+        <option value="ex13">Rowing</option>
+        <option value="ex14">Shoulder Press</option>
+        <option value="ex15">Swimming</option>
+        <option value="ex16">Tennis</option>
+    </select>
+</section>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h4>How Many Calories Did I Burn?</h4>
+        <form id="exerciseForm">
+            <div class="form-group">
+                <label for="weight">Your Weight</label>
+                <input type="text" id="weight" name="weight" placeholder="kilograms" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration</label>
+                <input type="text" id="duration" name="duration" placeholder="minutes" required>
+            </div>
+            <button class="calculate-button" type="submit">Calculate the Calories burned </button>
+            <p id="calories"></p>
+        </form>
+    </div>
+</div>
+
+<script src="exercise.js"></script>
+</body>
+</html>

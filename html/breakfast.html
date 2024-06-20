@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Food to Breakfast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="add-food-page">
+        <h1>Add Food </h1>
+        <div class="search-section">
+            <input type="text" id="foodSearch" placeholder="Search our food database by name">
+            <button class="buttons-food" onclick="searchFood()">Search</button>
+            <button class="buttons-food" onclick="quickAddCalories()">Quick add calories</button>
+        </div>
+        <div class="favorites">
+            <label for="favoritesSelect">choose:</label>
+            <select id="favoritesSelect" class="buttons-food">
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Dinner</option>
+                <option>Snacks</option>
+            </select>
+        </div>
+        <div class="tabs">
+            <button class="buttons">Recent</button>
+            <button class="buttons">Frequent</button>
+            <button class="buttons">My Foods</button>
+            <button class="buttons">Meals</button>
+            <button class="buttons">Recipes</button>
+        </div>
+       
+        <button class="buttons add-checked">Add Checked</button>
+        <p class="tip">TIP : As you enter foods to your food diary, the foods you've eaten most recently will appear in this list so that you can quickly add them to your meals.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

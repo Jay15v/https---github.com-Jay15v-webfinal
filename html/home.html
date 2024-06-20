@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <div class="logoo">myfitness</div>
+    </section>
+
+    <!-- Navigation Section -->
+    <div class="wrapper">
+        <nav class="top_nav">
+            <ul>
+                <li><a href="home.html">MyHome</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="excersice.html">Exercise</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                   
+            </ul>
+        </nav>
+        <nav class="bottom_nav">
+            <ul>
+                    <li><a href="home.html">HOME</a></li>
+                 <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="check in.html">check-in</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <section class="MyHome" id="main">
+        <div class="calories-remaining">
+            <h2>Calories Remaining</h2>
+            <div class="buttons-container">
+                <div class="food_exercise">
+                    <!-- Add Food Button with direct link to food.html -->
+                    <button onclick="window.location.href='food.html'" class="add-food">Add Food</button>
+                    <button onclick="window.location.href='excersice.html'" class="add-excersice">Add excersice</button>
+
+                </div>
+            </div>
+            <div class="weight-scale">
+                <button id="weightScaleButton" class="weight_button">
+                    <i class="fa-solid fa-weight-scale"></i>
+                </button>
+            </div>
+            <div class="num">
+                <span>1200</span>
+                <span>0</span>
+                <span>-</span>
+                <span>0</span>
+                <span>=</span>
+                <span>1200</span>
+            </div>
+            <div class="goals">
+                <span>GOAL</span>
+                <span>FOOD</span>
+                <span>EXERCISE</span>
+                <span>NET</span>
+            </div>
+            <div class="loading-item">
+                <!-- Placeholder for any dynamic content or loading indicators -->
+            </div>
+        </div>
+    </section>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

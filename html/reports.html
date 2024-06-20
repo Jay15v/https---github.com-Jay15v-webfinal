@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts and Reports</title>
+    <link rel="stylesheet" href="reportsstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+    <section class="header"> 
+        <div class="logoo">myfitness</div> 
+    </section> 
+     
+    <div class="wrapper"> 
+        <nav class="top_nav"> 
+            <ul> 
+                <li><a href="home.html">MYHOME</a></li> 
+                <li><a href="food.html">FOOD</a></li> 
+                <li><a href="excersice.html">EXERCISE</a></li> 
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>
+    
+            </ul> 
+        </nav> 
+        <nav class="bottom_nav">
+            <ul>
+                    <li><a href="home.html">HOME</a></li>
+                 <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="check in.html">CHECK-IN</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+        <h1>Charts and Reports</h1>
+        <div class="controls">
+            <select id="reportType">
+                <option value="weight">Weight</option>
+                <option value="calories">Calories</option>
+                <option value="exercise">Exercise</option>
+            </select>
+            <button class="export-btn">EXPORT</button>
+        </div>
+        <div class="period-buttons">
+            <button>Last 7 days</button>
+            <button>Last 30 days</button>
+            <button>Last 90 days</button>
+            <button>Last 180 days</button>
+            <button>Last year</button>
+        </div>
+        <div class="chart-area">
+            <canvas id="weightChart"></canvas> <!-- Canvas for Chart.js -->
+        </div>
+    </div>
+    <script src="chart-setup.js"></script> <!-- Link to your Chart setup JavaScript file -->
+</body>
+</html>

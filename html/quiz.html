@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFitnessQuiz</title>
+    <link rel="stylesheet" href="quiz.css"> 
+</head>
+<body>
+    <header>
+        <h1 >Welcome to MyFitnessQuiz</h1>
+    </header>
+    <p class="spacing">Answer the following questions to get personalized recommendations.</p>
+
+    <form id="quizForm" action="home.html">
+
+        <label for="name">1. What's your name?</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">2. How old are you?</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">3. What is your gender?</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="activity">4. How would you describe your activity level?</label>
+        <select id="activity" name="activity" required>
+            <option value="">Select</option>
+            <option value="sedentary">Sedentary (little to no exercise)</option>
+            <option value="lightly_active">Lightly active (light exercise/sports 1-3 days a week)</option>
+            <option value="moderately_active">Moderately active (moderate exercise/sports 3-5 days a week)</option>
+            <option value="very_active">Very active (hard exercise/sports 6-7 days a week)</option>
+            <option value="extra_active">Extra active (very hard exercise/sports & physical job)</option>
+        </select>
+
+        <label for="goal">5. What is your fitness goal?</label>
+        <select id="goal" name="goal" required>
+            <option value="">Select</option>
+            <option value="lose_weight">Lose Weight</option>
+            <option value="maintain_weight">Maintain Weight</option>
+            <option value="gain_weight">Gain Weight</option>
+        </select>
+
+        <label for="barriers">6. In the past, what have been your barriers to reaching your goal?</label>
+        <select id="barriers" name="barriers" required>
+            <option value="">Select</option>
+            <option value="lack_of_time">Lack of time</option>
+            <option value="hard_regimen">Regimen was too hard to follow</option>
+            <option value="disliked_food">Did not enjoy the food</option>
+            <option value="difficult_choices">Difficult to make food choices</option>
+            <option value="social_events">Social eating and events</option>
+            <option value="food_cravings">Food cravings</option>
+            <option value="lack_of_progress">Lack of progress</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

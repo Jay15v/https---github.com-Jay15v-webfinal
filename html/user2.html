@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Diet Tracker Admin</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">user 2</h1>
+        <h2 class="h2">Diet Plan</h2>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="active-row">
+                    <td>Lunch</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Dinner</td>
+                </tr>
+                <tr>
+                    <td>Snack</td>
+                </tr>
+            </tbody>
+        </table>
+   
+        <div class="admin-actions">
+            <h2>Add Item</h2>
+            <form id="add-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" ><br>
+                <label for="calories">Calories:</label>
+                <input type="number" id="calories" name="calories"><br>
+                <button type="submit" class="admin-edit">Add</button>
+            </form>
+        </div>
+
+        <div class="admin-actions">
+            <h2>Edit Item</h2>
+            <form id="edit-form">
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" name="edit-name" required><br>
+                <label for="edit-calories">Calories:</label>
+                <input type="number" id="edit-calories" name="edit-calories" required><br>
+                <button type="submit" class="admin-edit">Edit</button>
+            </form>
+        </div>
+
+        <div class="admin-actions">
+            <h2>Remove Item</h2>
+            <form id="remove-form">
+                <label for="remove-name">Name:</label>
+                <input type="text" id="remove-name" name="remove-name" required><br>
+                <button type="submit" class="admin-edit">Remove</button>
+            </form>
+        </div>
+        <button onclick="window.location.href='admin.html'" class="back-button">Back</button>
+
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
